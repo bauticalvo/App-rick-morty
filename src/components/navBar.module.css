@@ -1,0 +1,28 @@
+
+
+.divNav {
+    place-items:initial;
+     display: flex ;
+   flex-wrap: wrap;
+    justify-content: 'space-between';
+    font-family: fantasy;
+ }
+ 
+ .neon {
+  display: block;
+  padding: 6px 20px;
+  background-color: #6156f5;
+  letter-spacing: 2px;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+  margin: 20px;
+  
+ }
+
+ .neon:hover {
+  background: #746ce6;
+  box-shadow: 0 0 20px #97faff, 0 0 40px #97faff,
+  0 0 60px #97faff;
+  transition-delay: 0.5s;
+ }

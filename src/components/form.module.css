@@ -1,0 +1,58 @@
+
+
+.form {
+   
+    width: 100%;
+    color:#84D0D4;
+    padding: 300px ;   
+
+    margin: 0;
+   
+    background-image:  url(C:\Users\Fredy\Desktop\rick\rick_and_morty\src\img\rick-y-morty-portal-dimensional_3840x2160_xtrafondos.com.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.f {
+   padding-left: 0px;
+    
+    
+}
+.submitButton {
+    width: 150px;
+    margin: 30px;
+    padding: 0%;
+    border: none;
+    transform: rotate(5deg);
+    transform-origin: center;
+    font-family: 'Gochi Hand', cursive;
+    text-decoration: none;
+    font-size: 15px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #494a4b;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: #237cd6;
+    
+}
+
+.span {
+    background-color: #f1f5f8;
+    display: block;
+    padding: o.5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid #494a4b;
+}
+
+ .submitButton:hover {
+    cursor: pointer;
+ }
+
+ .submitButton:active {
+    transform: translateY(5px);
+    padding-bottom: 0;
+    outline: 0;
+ }
