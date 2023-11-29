@@ -1,4 +1,4 @@
-import { ADD_FAV, FILTER, REMOVE_FAV , ORDER} from "./actionstypes"
+import { ADD_FAV, FILTER, REMOVE_FAV , ORDER} from "../actionstypes"
 
 const initialState = {
     myFavorites: [],
