@@ -26,12 +26,22 @@ function App() {
    const location = useLocation()
    const dispatch = useDispatch()
 
-   function login(userData) {
-      if (userData.password === PASSWORD && userData.email === EMAIL) {
-         setAccess(true);
-         navigate('/home');
-      } 
+  async function login(userData) {
+      const { email, password } = userData;
+      const URL = 'http://localhost:3001/rickandmorty/login/';
+     try {
+     const {data} = await axios(URL + `?email=${email}&password=${password}`)
+         const { access } = data;
+         if(access){
+         setAccess(data);
+         access && navigate('/home');
+      }
+     } catch (error) {
+         alert('Contraseña o email incorrecto')
+      }
+      ;
    }
+
    useEffect(() => {
       // este es el correcto
       //!access && navigate('/'); 
@@ -43,24 +53,25 @@ function App() {
       
    }
 
-   function onSearch(id) {
+   async function onSearch(id) {
       const characterId = characters.filter(char => char.id === Number(id))
       if(characterId.length) {
          return alert(`${characterId[0].name} ya existe!`)
       }
 
-
-      axios(`http://localhost:3001/rickandmorty/character/${id}`).then(
-         ({ data }) => {
-            if (data.name) {
+      try{
+      const {data} = await axios(`http://localhost:3001/rickandmorty/character/${id}`);
+          if(data.name) {
                setCharacters((oldChars) => [...oldChars, data]);
             } else {
                window.alert('¡No hay personajes con este ID!');
             }
-         }
-      );
       navigate('/home')
+
+   } catch(error){
+      return res.status(500).json( error.message)
    }
+}
 
    const onClose = id => {
       setCharacters(characters.filter(char => char.id !== Number(id)))
