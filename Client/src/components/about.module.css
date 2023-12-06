@@ -5,3 +5,7 @@
     text-align: center;
     font-size: x-large;
 }
+
+.lista{
+    list-style: none;
+}

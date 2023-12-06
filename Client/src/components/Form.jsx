@@ -35,6 +35,7 @@ export default function Form({login}) {
     className={style.form}
       
     >
+      <div className={style.form22}>
         <form className={style.f} onSubmit={handleSubmit}>
 
         <label>Email:</label> <br/>
@@ -68,7 +69,7 @@ export default function Form({login}) {
           <span className={style.span} >Enviar</span>
         </button>
         
-        </form>
+        </form></div>
     </div>
   )
 }

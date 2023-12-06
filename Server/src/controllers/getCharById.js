@@ -1,10 +1,10 @@
-import axios from 'axios';
+const axios = require('axios')
 
 
  async function getCharById(req, res){
   try {
     const charId = req.params.id
-    const URL = `https://rickandmorty.com/api/character`;
+    const URL = "https://rickandmortyapi.com/api/character";
 
    const {data} = await axios.get(`${URL}/${charId}`)
    const  {id, status,  name, species, origin, 
@@ -24,4 +24,4 @@ import axios from 'axios';
   
 }
 
-module.exports = {getCharById}
+module.exports = getCharById

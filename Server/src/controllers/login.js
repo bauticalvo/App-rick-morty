@@ -1,4 +1,4 @@
-import users from '../utils/users'
+const users = require('../utils/users')
 
 
 function login(req,res){
@@ -12,4 +12,4 @@ function login(req,res){
      return res.json({ access });
 }
 
-module.exports = {login}
+module.exports = login;
