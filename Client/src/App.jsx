@@ -46,7 +46,7 @@ function App() {
    useEffect(() => {
       // este es el correcto
       //!access && navigate('/'); 
-      !access && navigate('/');
+      !access && navigate('/home');
    }, [access]);
 
    function logout(){

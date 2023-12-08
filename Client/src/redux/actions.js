@@ -2,7 +2,7 @@ import {ADD_FAV, FILTER, ORDER, REMOVE_FAV} from './actionstypes'
 import axios from 'axios'
 
 
-export function addFav(character){
+export const addFav = (character)=>{
    
       const endpoint = 'http://localhost:3001/rickandmorty/fav';
       return async (dispatch) =>{
@@ -13,21 +13,19 @@ export function addFav(character){
         payload: data,
       });
    } catch(error) {
-      throw new Error('No se logro agregar el personaje a favoritos')
+      alert('No se logro agregar el personaje a favoritos')
    }
   }
  };
 
  export const removeFav = (id) => {
   const endpoint = 'http://localhost:3001/rickandmorty/fav/' + id;
-  return (dispatch) => {
-     axios.delete(endpoint)
-      .then(({ data }) => {
+  return async (dispatch) => {
+     const {data} = await axios.delete(endpoint)
           return dispatch({
             type: REMOVE_FAV,
             payload: data,
         });
-     });
   };
 };
 
