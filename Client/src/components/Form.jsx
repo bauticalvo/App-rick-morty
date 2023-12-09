@@ -38,8 +38,8 @@ export default function Form({login}) {
       <div className={style.form22}>
         <form className={style.f} onSubmit={handleSubmit}>
 
-        <label>Email:</label> <br/>
-        <input 
+        <label className={style.label}>Email:</label> <br/>
+        <input className={style.input}
         key='email'
         name='email'
         type='email'  
@@ -49,8 +49,8 @@ export default function Form({login}) {
         
         /><p> {errors.email ? errors.email : null}</p>
 
-        <label >Contraseña:</label><br/>
-        <input 
+        <label className={style.label}>Contraseña:</label><br/>
+        <input className={style.input}
         key= 'password'
         name='password'
         type='password'

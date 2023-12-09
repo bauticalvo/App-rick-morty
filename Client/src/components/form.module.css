@@ -12,9 +12,25 @@
     overflow: hidden;
     padding-left: 150px;
     display: flex;
+    justify-content: left;
     
 } 
 
+
+
+.label{
+    font-family: fantasy;
+    display: flex;
+    justify-content: center;
+}
+.input{ 
+    border-color: #494a4b;
+    border-style: outset;
+    background-color: #6ffdce;
+    box-sizing: border-box;   
+    padding: 2px;
+
+}
 
 
 
@@ -37,7 +53,7 @@
 }
 
 .span {
-    background-color: #f1f5f8;
+    background-color: #6ffdce;
     display: block;
     padding: o.5rem 1rem;
     border-radius: 5px;
