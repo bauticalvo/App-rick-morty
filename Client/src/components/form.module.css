@@ -1,8 +1,6 @@
 
-
 .form {
-   
-    width: 100%;
+    width: 100vw;
     color:#84D0D4;
     padding: 300px ;   
     margin: 0;
@@ -12,15 +10,11 @@
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    
+    padding-left: 150px;
+    display: flex;
     
 } 
 
-.form22{
-    display: flex;
-    justify-content: start;
-    
-}
 
 
 

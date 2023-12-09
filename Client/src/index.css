@@ -1,4 +1,4 @@
-:root {
+body{
   font-family: oblique bold 120% cursive;
   line-height: 1.5;
   font-weight: 400;
@@ -12,6 +12,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  background-image: url(C:\Users\Fredy\Desktop\rick_and_morty\Client\assets\img\876590.png) ;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
 }
 
 a {
@@ -26,14 +31,8 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  
-  
-  background-image: url(C:\Users\Fredy\Desktop\rick_and_morty\Client\assets\img\876590.png) ;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-
-  
+  width: 100%;
+  padding: auto;
 }
 
 h1 {
