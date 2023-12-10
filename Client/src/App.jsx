@@ -20,8 +20,6 @@ function App() {
    const [access , setAccess] = useState(false)
 
 
-   const EMAIL = 'bito.bc@gmail.com'
-   const PASSWORD = 'bito22'
    const navigate = useNavigate()
    const location = useLocation()
    const dispatch = useDispatch()

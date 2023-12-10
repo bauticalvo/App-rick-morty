@@ -37,7 +37,7 @@ export default function Form({login}) {
     >
       <div className={style.form22}>
         <form className={style.f} onSubmit={handleSubmit}>
-
+      <p className={style.par}>
         <label className={style.label}>Email:</label> <br/>
         <input className={style.input}
         key='email'
@@ -47,8 +47,10 @@ export default function Form({login}) {
         value={userData.email}
         onChange={handleChange}
         
-        /><p> {errors.email ? errors.email : null}</p>
+        /></p>
+        <p> {errors.email ? errors.email : null}</p>
 
+        <p className={style.par} >
         <label className={style.label}>Contraseña:</label><br/>
         <input className={style.input}
         key= 'password'
@@ -58,7 +60,8 @@ export default function Form({login}) {
         value={userData.password}
         onChange={handleChange}
        
-       /><p> {errors.password ? errors.password : null}</p>
+       /></p>
+       <p> {errors.password ? errors.password : null}</p>
       
 
         <button 

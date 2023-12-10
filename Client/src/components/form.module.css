@@ -1,32 +1,47 @@
 
 .form {
     width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     color:#84D0D4;
-    padding: 300px ;   
     margin: 0;
     background-image:  url(C:\Users\Fredy\Desktop\rick_and_morty\Client\assets\img\rick-y-morty-portal-dimensional_3840x2160_xtrafondos.com.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
-    padding-left: 150px;
+    padding-left: 100px;
     display: flex;
     justify-content: left;
-    
+    padding-top: 200px;
 } 
 
-
+.f{
+    background-color:#f1f1f7;
+    padding: 25px;
+    align-items: center;
+    border-radius: 5%;
+    transition: 0.2s;
+    contain:layout;
+}
+.f:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #B5EDFC;
+    transition-delay: 0.5s;
+    background: #ecebfa;
+}
 
 .label{
     font-family: fantasy;
+    font-size:large;
     display: flex;
     justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 0, 0, 0.5);
 }
 .input{ 
     border-color: #494a4b;
     border-style: outset;
-    background-color: #6ffdce;
+    background-color: #B5EDFC;
     box-sizing: border-box;   
     padding: 2px;
 
@@ -53,11 +68,11 @@
 }
 
 .span {
-    background-color: #6ffdce;
+    background-color: #B5EDFC;
     display: block;
     padding: o.5rem 1rem;
     border-radius: 5px;
-    border: 2px solid #494a4b;
+    border: 1px solid #494a4b;
 }
 
  .submitButton:hover {
@@ -68,4 +83,13 @@
     transform: translateY(5px);
     padding-bottom: 0;
     outline: 0;
+ }
+
+ .par{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    
+    padding-left: 15px;
+    padding-right: 15px;
  }
