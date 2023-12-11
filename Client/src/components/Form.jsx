@@ -33,7 +33,6 @@ export default function Form({login}) {
     return (
     <div
     className={style.form}
-      
     >
       <div className={style.form22}>
         <form className={style.f} onSubmit={handleSubmit}>

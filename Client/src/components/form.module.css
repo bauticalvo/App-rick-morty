@@ -2,7 +2,7 @@
 .form {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow:-moz-hidden-unscrollable;
     color:#84D0D4;
     margin: 0;
     background-image:  url(C:\Users\Fredy\Desktop\rick_and_morty\Client\assets\img\rick-y-morty-portal-dimensional_3840x2160_xtrafondos.com.jpg);
