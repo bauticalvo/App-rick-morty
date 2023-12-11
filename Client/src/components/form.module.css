@@ -17,7 +17,7 @@
 } 
 
 .f{
-    background-color:#f1f1f7;
+    background-color:#373738;
     padding: 25px;
     align-items: center;
     border-radius: 5%;
@@ -28,7 +28,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 2px solid #B5EDFC;
     transition-delay: 0.5s;
-    background: #ecebfa;
+    background: #414142;
 }
 
 .label{

@@ -10,9 +10,9 @@ if(!expReg.test(userData.email)) error.email = 'Debe ingresar un mail correcto'
 
 
 if(!userData.password.length) error.password = 'Debe ingresar una contraseña'
-if(userData.password.length < 6) error.password = 'La contraseña debe tener mas de 6 caracteres';
-if(userData.password.length > 10) error.password = 'La contraseña debe tener menos de 10 caracteres';
-if(!expRegPass.test(userData.password)) error.password = 'La contraseña debe tener al menos un numero'
+if(userData.password.length < 6) error.password = 'Debe tener mas de 6 caracteres';
+if(userData.password.length > 10) error.password = 'Debe tener menos de 10 caracteres';
+if(!expRegPass.test(userData.password)) error.password = 'Debe tener al menos un numero'
 
 
   return error;

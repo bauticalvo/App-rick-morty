@@ -19,15 +19,17 @@ export const addFav = (character)=>{
  };
 
  export const removeFav = (id) => {
-  const endpoint = 'http://localhost:3001/rickandmorty/fav/' + id;
-  return async (dispatch) => {
-     const {data} = await axios.delete(endpoint)
-          return dispatch({
-            type: REMOVE_FAV,
-            payload: data,
-        });
+    const endpoint = 'http://localhost:3001/rickandmorty/fav/' + id;
+    return (dispatch) => {
+       axios.delete(endpoint)
+        .then(({ data }) => {
+            return dispatch({
+              type: REMOVE_FAV,
+              payload: data,
+          });
+       });
+    };
   };
-};
 
 
 export const fliterCards = (gender) => {
