@@ -1,12 +1,15 @@
 const apiRouter = require('express').Router();
-
 const getCharById = require('../controllers/getCharById')
+const postfav = require('../controllers/postFav')
 const login = require('../controllers/login')
-const {postFav , deleteFavs} = require('../controllers/handleFavorites')
+const postUser = require('../controllers/postUser')
+const deleteFav = require('../controllers/deleteFav')
 
 apiRouter.get('/character/:id', getCharById);
+
 apiRouter.get('/login', login);
-apiRouter.post('/fav', postFav);
-apiRouter.delete('/fav/:id', deleteFavs);
+apiRouter.post('/login', postUser);
+apiRouter.post('/fav', postfav);
+apiRouter.delete('/fav/:id', deleteFav);
 
 module.exports = apiRouter;
